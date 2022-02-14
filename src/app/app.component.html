@@ -1,0 +1,17 @@
+<mat-sidenav-container>
+    <mat-sidenav mode="side" [(opened)]="opened">
+        <div class="menu"><h2 routerLink="/home" id="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Accueil</h2>
+                            <h2 routerLinkActive="active" id="competences" routerLink="/competences" [routerLinkActiveOptions]="{exact : true}">Compétences</h2>
+                            <h2 id="projets" >Projets</h2>
+                            <h2 id="contacts" routerLink="/contacts" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Contacts</h2></div>
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <ng-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)" (particlesInit)="particlesInit($event)"></ng-particles>
+        
+        <div (click)="opened=!opened" class="lignes">
+            <div class="l1"></div>
+            <div class="l2"></div>
+        </div>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>

@@ -1,0 +1,11 @@
+
+<div class="competences-info-card" >
+        <div class="title">    
+            <h2>{{ competences.title}}</h2>
+        </div>
+        <div class="ligne">
+            <mat-progress-bar [mode]="'determinate'" [value]="competences.pour" [color]="'warm'"></mat-progress-bar>
+        </div>
+        <div class="pour">{{competences.pour+'%'}}</div>
+</div>
+

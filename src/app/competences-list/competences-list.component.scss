@@ -1,0 +1,65 @@
+.parent-competences{
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left ;
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+    padding: 1em;
+    border-radius: 5px;
+
+  }
+
+.competences-non{
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  margin: 5% auto 5% auto;
+  width: 50%;
+  padding: 1em;
+  border-radius: 5px;
+
+}
+
+.competences-non {
+  h1{
+    width: 10em;  
+  }
+  
+  mat-progress-bar{
+    position: absolute;
+    width: 25%;
+    height: 1%;
+    color: dodgerblue;
+
+
+    &::ng-deep .mat-progress-bar-fill::after {
+    background-color: dodgerblue;
+    }   
+
+    &::ng-deep .mat-progress-bar {
+    border-radius: 10px;
+    }
+  }
+}
+
+.competences-non-info-card{
+  display: flex;
+  flex-direction: row;
+  gap: 15%;
+
+  .ligne{
+    margin-top: 1%;
+}
+
+  .pour{
+    margin-left: 40%;
+    }
+
+  h2{
+    width: 8em;
+  }
+  
+}

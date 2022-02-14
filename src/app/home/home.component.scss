@@ -1,0 +1,142 @@
+
+/*body{
+    background-color: darkgrey ;
+}
+
+.eyes{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+}
+
+.eye{
+    width: 240px;
+    height: 120px;
+    background: whitesmoke;
+    display: inline-block;
+    margin: 40px;
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.ball{
+    width: 40px;
+    height: 40px;
+    background-color: black;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(50%, 50%);
+    border-radius: 50%;
+}*/
+
+*, ::before, ::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.accueil{
+    width: 80%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    margin : 15% 0 0 15%;
+}
+
+h1{
+    font-size: 90px;
+    font-family: Oswald;
+    line-height: 1em;
+    color: dodgerblue;
+}
+
+.medias-container{
+    display: flex;
+}
+
+.medias-btn{
+    width : 5em;
+    height: 5em;
+    border-radius: 50%;
+    background-color: #f3f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 0.5em;
+    cursor: pointer;
+}
+
+.icones{
+    width: 3em;
+    z-index: 100000;
+    &:hover{
+        -webkit-animation-name: spin;
+    -webkit-animation-duration: 1000ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: linear;
+
+    -moz-animation-name: spin;
+    -moz-animation-duration: 1000ms;
+    -moz-animation-iteration-count: 1;
+    -moz-animation-timing-function: linear;
+
+    -ms-animation-name: spin;
+    -ms-animation-duration: 1000ms;
+    -ms-animation-iteration-count: 1;
+    -ms-animation-timing-function: linear;
+
+
+
+    @-ms-keyframes spin { 
+        from { 
+            -ms-transform: rotate(0deg); 
+        } to { 
+            -ms-transform: rotate(360deg); 
+        }
+    }
+    @-moz-keyframes spin { 
+        from { 
+            -moz-transform: rotate(0deg); 
+        } to { 
+            -moz-transform: rotate(360deg); 
+        }
+    }
+    @-webkit-keyframes spin { 
+        from { 
+            -webkit-transform: rotate(0deg); 
+        } to { 
+            -webkit-transform: rotate(360deg); 
+        }
+    }
+    @keyframes spin { 
+        from { 
+            transform: rotate(0deg); 
+        } to { 
+            transform: rotate(360deg); 
+        }
+    }
+    }
+}
+
+.btn{
+    margin-left:1em;
+    background: transparent;
+    text-decoration: none;
+    padding:10px 20px;
+    border-radius: 3px;
+    border: 2px solid #6d6d6d;
+    color: rgba(145,145,145,1);
+    transition: all 0.4s ease-in-out;
+    z-index: 10000;
+    &:hover{
+        background-color: dodgerblue;
+        color: #f3f3f3;
+        border-color: dodgerblue;
+    }
+}
