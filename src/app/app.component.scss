@@ -19,6 +19,7 @@ mat-sidenav {
     gap: 3em;
     align-items: center;
     justify-content: center;
+    width: 100%;
 }
 
 mat-sidenav-content{
@@ -97,3 +98,8 @@ h2:hover{
     background-position: -50% 100%;
   }
 
+@media screen and (max-width: 450px) {
+    mat-sidenav{
+        width: 350px;
+    }
+}
