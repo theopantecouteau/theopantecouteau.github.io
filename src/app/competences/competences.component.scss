@@ -1,7 +1,7 @@
 
 
 .parent-component{
-    margin: 10% auto 5% auto;
+    margin: 10% auto 0 auto;
     width: 80%;
 }
   
@@ -11,8 +11,8 @@ table {
   }
   
 #title{
-    font-size: 18px;
-    font-weight: 400;
+    font-size: 20px;
+    font-weight: 500;
   }
   
 th, td {
@@ -34,16 +34,17 @@ mat-progress-bar{
       }
 }
 
-h1{
+h2{
   font-weight: 800;
     width: 100%;
     padding: 1%;
-    background-color: dodgerblue;
+    background-color: rgba(30,144,255,0.6);
     margin-top: 5%;
     font-family: Oswald;
     font-size: 35px;
     text-align: center;
     border-radius: 10px;
+
 }
 
 @media screen and (max-width : 450px){
@@ -51,4 +52,20 @@ h1{
     width: 100%;
     margin-top: 35%;
   }
+}
+
+h1{
+    position: absolute;
+    width: 100%;
+    padding: 50px 0 60px 0 ;
+    background-color: dodgerblue;
+    color: white;
+    text-align: center;
+    font-size: 50px;
+    font-weight: 400;
+
+}
+
+.autre{
+  margin-top: -1%;
 }

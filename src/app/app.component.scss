@@ -36,22 +36,31 @@ ng-particles{
 .lignes{
     position: absolute;
     height: 1em;
-    top: 6%;
+    top: 4%;
     left:5%;
     padding: 1em;
     z-index: 10000;
 }
 
 .l1{
-    width: 250px;
-    height: 3px;
+    width: 80px;
+    height: 4px;
     border-radius: 5px;
     background-color: #6d6d6d;
 }
 
 .l2{
-    width: 140px;
-    height: 3px;
+    width: 80px;
+    height: 4px;
+    border-radius: 5px;
+    position: relative;
+    top:10px;
+    background-color: #6d6d6d
+}
+
+.l3{
+    width: 80px;
+    height: 4px;
     border-radius: 5px;
     position: relative;
     top:20px;
@@ -102,4 +111,19 @@ h2:hover{
     mat-sidenav{
         width: 350px;
     }
+}
+
+#cv {
+    width: 4em ;
+    height:4em ;
+    position: absolute;
+    right: 50px;
+    top: 4%;
+    z-index: 10000;
+}
+
+#cv2 {
+    width: 4em ;
+    height:4em ;
+    margin-left: 40px;
 }

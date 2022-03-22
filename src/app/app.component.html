@@ -1,17 +1,26 @@
 <mat-sidenav-container>
     <mat-sidenav mode="side" [(opened)]="opened">
-        <div class="menu"><h2 (click)="opened=!opened" routerLink="/home" id="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Accueil</h2>
-                            <h2 (click)="opened=!opened" routerLinkActive="active" id="competences" routerLink="/competences" [routerLinkActiveOptions]="{exact : true}">Compétences</h2>
-                            <h2 (click)="opened=!opened" routerLink="/projets" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}" id="projets" >Projets</h2>
-                            <h2 (click)="opened=!opened" id="contacts" routerLink="/contacts" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Contacts</h2></div>
+        <div class="menu">
+            <h2><a href="assets/img/CV.pdf" download="CV_PANTECOUTEAU"><img  id="cv2" src="assets/img/icon_cv.png" alt=""></a></h2>
+            <h2 (click)="opened=!opened" routerLink="/home" id="home" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Accueil</h2>
+            <h2 (click)="opened=!opened" id="/propos" routerLink="/propos" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">À propos</h2>
+            <h2 (click)="opened=!opened" routerLinkActive="active" id="competences" routerLink="/competences" [routerLinkActiveOptions]="{exact : true}">Compétences</h2>
+            <h2 (click)="opened=!opened" routerLink="/projets" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}" id="projets" >Projets</h2>
+            <h2 (click)="opened=!opened" routerLink="/projets" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}" id="futur" >Mon futur</h2>
+            <h2 (click)="opened=!opened" id="contacts" routerLink="/contacts" routerLinkActive="active" [routerLinkActiveOptions]="{exact : true}">Contacts</h2>
+            
+                        
+        </div>
     </mat-sidenav>
     <mat-sidenav-content>
-        <ng-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)" (particlesInit)="particlesInit($event)"></ng-particles>
+        <ng-particles [id]="id" [options]="particlesOptions" (particlesLoaded)="particlesLoaded($event)"></ng-particles>
         
         <div (click)="opened=!opened" class="lignes">
             <div class="l1"></div>
             <div class="l2"></div>
+            <div class="l3"></div>
         </div>
+        <a href="assets/img/CV.pdf" download="CV_PANTECOUTEAU"><img  id="cv" src="assets/img/icon_cv.png" alt=""></a>
         <router-outlet></router-outlet>
     </mat-sidenav-content>
 </mat-sidenav-container>

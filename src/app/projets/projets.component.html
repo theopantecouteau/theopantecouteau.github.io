@@ -1,22 +1,15 @@
-<div class="parent-card">
-    <div class="projet-card">
-        <div class="title"><p>Site e-commerce en PHP</p></div>
-        <div class="image"><img href="../../assets/img/php.svg"></div>
-        <button>En savoir plus</button>
+<h1>Mes Réalisations</h1>
+  <carousel [height]="800" [width]="1800" [cellWidth]='1800' [loop]="true" [dots]="true" [margin]="100" [transitionDuration]='1000'>
+    <div routerLink="/singleProjet2"class="carousel-cell" (click)="onCreate()">
+      <img src="assets/img/Screenshot_16.png">
     </div>
-    <div class="projet-card">
-        <div class="title"><p>Application Android Java</p></div>
-        <div class="image"><p></p></div>
-        <button>En savoir plus</button>
-    </div>
-    <div class="projet-card">
-        <div class="title"><p>UML de l'application Discord</p></div>
-        <div class="image"><p></p></div>
-        <button>En savoir plus</button>
-    </div>
-    <div class="projet-card">
-        <div class="title"><p>Site vitrine HTML/CSS</p></div>
-        <div class="image"><p></p></div>
-        <button>En savoir plus</button>
-    </div>
-</div>
+    <div (click)="onCreate2()" routerLink="/singleProjet" class="carousel-cell">
+        <img src="assets/img/Screenshot_17.png">
+      </div>
+      <div (click)="onCreate3()" routerLink="/singleProjet" class="carousel-cell">
+        <img src="assets/img/Screenshot_20.png">
+      </div>
+      <div (click)="onCreate4()" routerLink="/singleProjet" class="carousel-cell">
+        <img src="assets/img/Screenshot_21.png">
+      </div>
+  </carousel>
