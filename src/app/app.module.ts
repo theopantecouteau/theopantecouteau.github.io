@@ -21,7 +21,8 @@ import {MatDialogModule} from '@angular/material/dialog';
 import { SingleProjet1Component } from './single-projet1/single-projet1.component';
 import { SingleProjet2Component } from './single-projet2/single-projet2.component';
 import { SingleProjet3Component } from './single-projet3/single-projet3.component';
-import { SingleProjet4Component } from './single-projet4/single-projet4.component'
+import { SingleProjet4Component } from './single-projet4/single-projet4.component';
+import { FuturComponent } from './futur/futur.component'
 
 @NgModule({
   declarations: [
@@ -35,7 +36,8 @@ import { SingleProjet4Component } from './single-projet4/single-projet4.componen
     SingleProjet1Component,
     SingleProjet2Component,
     SingleProjet3Component,
-    SingleProjet4Component
+    SingleProjet4Component,
+    FuturComponent
   ],
   imports: [
     BrowserModule,
