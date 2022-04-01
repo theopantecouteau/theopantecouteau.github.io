@@ -212,3 +212,18 @@ h1{
     font-size: 50px;
     font-weight: 400;
 }
+
+#propos {
+    margin: -8% auto -10% auto ;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f0f0f0;
+    box-shadow: #c2c2c2 12px 12px 12px 0;
+    width: 85%;
+    padding: 1% 0 1% 0;
+    border-radius: 12px;
+    font-size: 20px;
+    font-weight: 300;
+}
